@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Reyes\\Downloads\\1. Campus\\2. Projects\\.NET\\MiAppHexagonal\\MiAppHexagonal.csproj": {}
+    "/home/camper/Descargas/C#/MiAppHexagonal/MiAppHexagonal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Reyes\\Downloads\\1. Campus\\2. Projects\\.NET\\MiAppHexagonal\\MiAppHexagonal.csproj": {
+    "/home/camper/Descargas/C#/MiAppHexagonal/MiAppHexagonal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Reyes\\Downloads\\1. Campus\\2. Projects\\.NET\\MiAppHexagonal\\MiAppHexagonal.csproj",
+        "projectUniqueName": "/home/camper/Descargas/C#/MiAppHexagonal/MiAppHexagonal.csproj",
         "projectName": "MiAppHexagonal",
-        "projectPath": "C:\\Users\\Reyes\\Downloads\\1. Campus\\2. Projects\\.NET\\MiAppHexagonal\\MiAppHexagonal.csproj",
-        "packagesPath": "C:\\Users\\Reyes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Reyes\\Downloads\\1. Campus\\2. Projects\\.NET\\MiAppHexagonal\\obj\\",
+        "projectPath": "/home/camper/Descargas/C#/MiAppHexagonal/MiAppHexagonal.csproj",
+        "packagesPath": "/home/camper/.nuget/packages/",
+        "outputPath": "/home/camper/Descargas/C#/MiAppHexagonal/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Reyes\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/camper/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -64,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.408/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
