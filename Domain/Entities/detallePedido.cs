@@ -2,8 +2,8 @@ using System;
 
 namespace MiAppHexagonal.Domain.Entities;
 
-/*Composicion (Pedido -> DetallePedido)
-La clase DetallePedido no puede existir sin Pedido, por eso usamos composicion.*/
+/*Composición (Pedido → DetallePedido)
+La clase DetallePedido no puede existir sin Pedido, por eso usamos composición.*/
 public class DetallePedido
 {
     public int ProductoId { get; set; }
