@@ -12,7 +12,7 @@ namespace MiAppHexagonal.Application.UI.Clientes
     {
         
       
-        string connStr = "server=localhost;database=introcsharp;user=root;password=123456;";
+        string connStr = "server=localhost;database=introcsharp;user=root;password=Elise567*;";
        
         private readonly IDbFactory _factory;
         //var servicio = new ClienteService(factory.CrearClienteRepository());

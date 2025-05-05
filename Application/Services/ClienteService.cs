@@ -13,7 +13,7 @@ public class ClienteService
         _repo = repo;
     }
 
-    public void MostrarTodos()
+    public void MostrarCliente()
     {
         var lista = _repo.ObtenerTodos();
         foreach (var c in lista)

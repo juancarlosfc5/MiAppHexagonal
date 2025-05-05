@@ -25,7 +25,7 @@ internal class Program
             switch (opcion)
             {
                 case "1":
-                    servicio.MostrarTodos();
+                    servicio.MostrarCliente();
                     UICliente Uc = new UICliente(factory);
                     
                     break;
@@ -34,7 +34,7 @@ internal class Program
                     Console.Write("Nombre: ");
                     producto.Nombre = Console.ReadLine();
                     Console.WriteLine("Stock: ");
-                    producto.Stock = int.Parse(Console.ReadLine());
+                    producto.Stock = int.Parse(Console.ReadLine()!);
                     servicioProducto.CrearProducto(producto);
                     //servicio.CrearCliente(Console.ReadLine()!);
                     break;
