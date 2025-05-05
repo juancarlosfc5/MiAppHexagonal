@@ -8,7 +8,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        string connStr = "server=localhost;database=introcsharp;user=root;password=123456;";
+        string connStr = "server=localhost;database=introcsharp;user=root;password=Elise567*;";
         IDbFactory factory = new MySqlDbFactory(connStr);
         var servicio = new ClienteService(factory.CrearClienteRepository());
         var servicioProducto = new ProductoService(factory.CrearProductoRepository());
@@ -34,7 +34,7 @@ internal class Program
                     Console.Write("Nombre: ");
                     producto.Nombre = Console.ReadLine();
                     Console.WriteLine("Stock: ");
-                    producto.Stock = int.Parse(Console.ReadLine()!);
+                    producto.Stock = int.Parse(Console.ReadLine());
                     servicioProducto.CrearProducto(producto);
                     //servicio.CrearCliente(Console.ReadLine()!);
                     break;
