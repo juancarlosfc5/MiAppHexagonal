@@ -43,9 +43,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "MySql.Data": {
+            "Npgsql": {
               "target": "Package",
-              "version": "[9.3.0, )"
+              "version": "[9.0.3, )"
             }
           },
           "imports": [

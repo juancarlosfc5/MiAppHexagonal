@@ -1,8 +1,10 @@
-
+using System.Collections.Generic;
 using MiAppHexagonal.Domain.Entities;
 using MiAppHexagonal.Domain.Ports;
-using MiAppHexagonal.Infrastructure.Mysql;
-using MySql.Data.MySqlClient;
+using MiAppHexagonal.Infrastructure.Pgsql;
+using Npgsql;
+// using MiAppHexagonal.Infrastructure.Mysql;
+// using MySql.Data.MySqlClient;
 
 namespace MiAppHexagonal.Infrastructure.Repositories;
 
@@ -24,11 +26,14 @@ public class ProductoRepository : IGenericRepository<Producto>, IProductoReposit
     {
         var connection = _conexion.ObtenerConexion();
         string query = "INSERT INTO productos (nombre, stock) VALUES (@nombre, @stock)";
-        using var cmd = new MySqlCommand(query, connection);
-        cmd.Parameters.AddWithValue("@nombre", producto.Nombre);
-        cmd.Parameters.AddWithValue("@stock", producto.Stock);
-        cmd.ExecuteNonQuery();
-       
+        using var npgCmd = new NpgsqlCommand(query, connection);
+        npgCmd.Parameters.AddWithValue("@nombre", producto.Nombre!);
+        npgCmd.Parameters.AddWithValue("@stock", producto.Stock!);
+        npgCmd.ExecuteNonQuery();
+        // using var cmd = new MySqlCommand(query, connection);
+        // cmd.Parameters.AddWithValue("@nombre", producto.Nombre);
+        // cmd.Parameters.AddWithValue("@stock", producto.Stock);
+        // cmd.ExecuteNonQuery();
     }
 
     public void Eliminar(int id)
